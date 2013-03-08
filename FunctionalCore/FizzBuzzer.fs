@@ -1,4 +1,5 @@
 ﻿// Learn more about F# at http://fsharp.net
 
-module Module1
+module FizzBuzzer
 
+let Translate x = string x
