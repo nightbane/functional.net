@@ -1,5 +1,5 @@
-﻿// Learn more about F# at http://fsharp.net
-
-module FizzBuzzer
+﻿module FizzBuzzer
 
 let Translate x = string x
+
+ 
