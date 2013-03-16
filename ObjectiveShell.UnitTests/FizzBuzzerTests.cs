@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace ObjectiveShell.UnitTests
 {
     [TestFixture]
-    public class FizzBuzzTests
+    public class FizzBuzzerTests
     {
         [Test]
         public void TestOneisOne()
