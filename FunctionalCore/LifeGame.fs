@@ -22,4 +22,9 @@ let CountNeighbors (A: int[,]) x y =
 let Advance A =
     Array2D.init 
         (Array2D.length1 A) (Array2D.length2 A)
-        (fun x y -> 0 ) 
+        (fun x y -> 
+            match A.[x,y], CountNeighbors A x y with 
+            1,2 -> 1
+            | _,3 -> 1
+            | _,_ -> 0
+        ) 
