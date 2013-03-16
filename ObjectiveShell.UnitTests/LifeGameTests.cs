@@ -9,16 +9,26 @@ namespace ObjectiveShell.UnitTests
     [TestFixture]
     public class LifeGameTests
     {
+        private readonly int[,] empty = new[,]
+                                       {
+                                           {0, 0, 0},
+                                           {0, 0, 0},
+                                           {0, 0, 0},
+                                       };
+
         [Test]
         public void DeadBoardStillDead()
         {
-            var board = new[,]
-                            {
-                                {0, 0, 0},
-                                {0, 0, 0},
-                                {0, 0, 0},
-                            };
-            Assert.That(LifeGame.Advance(board), Is.EqualTo(board));
+            Assert.That(LifeGame.Advance(empty), Is.EqualTo(empty));
         }
+
+        [Test]
+        public void AliveCellAloneDies()
+        {
+            var board = (int[,])empty.Clone();            
+            Assert.That(LifeGame.Advance(empty), Is.EqualTo(empty));
+        }
+
+
     }
 }
