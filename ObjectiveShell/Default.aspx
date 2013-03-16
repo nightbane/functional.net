@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <p>Empty</p>
+    <p><asp:Literal ID="litOutput" runat="server"></asp:Literal></p>
     </div>
     </form>
 </body>

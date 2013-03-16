@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FizzBuzzerTests.cs" />
+    <Compile Include="FSharpListHelper.cs" />
     <Compile Include="LifeGameNeighborCountTests.cs" />
     <Compile Include="LifeGameTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
